@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <h2>My todo list</h2>
+        <form class="search">
+            <input type="text" placeholder="Search..." id="filter">
+            <label for="filter"><i class="fas fa-search"></i></label>
+        </form>
+    </header>
+
+    <form class="add">
+        <input type="text" id="add" placeholder="Write your next task...">
+    </form>
+
+    <div class="todos-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

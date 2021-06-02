@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    color: #444;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+header {
+    min-height: 8vh;
+    background: rgb(252,70,107);
+    background: linear-gradient(90deg, rgba(252,70,107,1) 4%, rgba(63,133,251,1) 65%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+form input#add {
+    padding: 1.5rem;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 2.5rem;
+    color: #444;
+}
+
+.add #add::placeholder {
+    font-size: 2.5rem;
+}
+
+/* todo div */
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    list-style: none;
+    color: #808080;
+    font-size: 1.5rem;
+    background-color: #f5f9ff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transition: box-shadow 0.3s ease-in-out, opacity 1s ease-in-out;; 
+}
+
+.todo:hover {
+    box-shadow: 2px 2px 20px #ddd;
+}
+
+.todo > div {
+    display: flex;
+    align-items: center;
+}
+
+.todo > div li {
+    margin-left: 0.5rem;
+}
+
+.fa-trash {
+    display: none !important;
+}
+
+.todo:hover .fa-trash {
+    display: block !important;
+    cursor: pointer;
+}
+
+.todo:hover .fa-trash:hover {
+    color: #ff0000;
+}
+
+.completed {
+    color: #05a505;
+}
+
+.done {
+    opacity: 0.5;
+}
+
+.fa-check {
+    cursor: pointer;
+}
+
+.filtered {
+    display: none;
+}
+
+.search {
+    position: relative;
+}
+
+.search #filter {
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search #filter:focus {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    outline: none;
+}
+
+.search label {
+    position: absolute !important;
+    top: 5px;
+    right: 6px;
+    font-size: 1.2rem;
+    color: indigo;
+}
